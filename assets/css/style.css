@@ -45,11 +45,11 @@
 .icon-logo {
     width: 3rem;
     height: 3rem;
+    cursor: pointer;
 }
 
 .icon-logo:hover {
-    animation: animate-logo-flip 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-        infinite forwards;
+    animation: animate-logo-flip .3s linear infinite alternate;
 }
 
 .icon-logo #bike {
@@ -67,7 +67,7 @@
 }
 
 .navbar-logo h3 {
-    animation: animate-logo-text .7s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2.5s
+    animation: animate-logo-text 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) 2.5s
         both;
 }
 
@@ -102,7 +102,8 @@
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0f1626;
 }
 
 #expand-toggle:checked ~ .navbar-nav {
@@ -139,13 +140,13 @@
     align-items: center;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
     filter: saturate(0%);
     transition: all 0.3s ease-out;
 }
 
 .card:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     filter: saturate(100%);
 }
 
@@ -161,10 +162,10 @@
 
 .card-body {
     width: 100%;
-    height: 40%;
+    height: 4.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     padding: 0.5rem;
 }
@@ -187,7 +188,7 @@
 }
 
 .page-link {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, .8);
     padding: 0.7rem 1rem;
     transition: all 0.3s ease-out;
 }
@@ -201,7 +202,7 @@
 }
 
 .page-link:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, .4);
 }
 
 /*----------- FOOTER -------------*/
